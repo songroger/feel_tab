@@ -1,0 +1,50 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "version": "1.0",
+    "name": "Feel Tab",
+    "short_name": "FB_by_Songroger",
+    "description": "Customize your new tab page with your own favorite sites~ By Songroger",
+    "manifest_version": 2,
+    "background": {
+        "page": "/content/browser/background.html",
+        "persistent": true
+    },
+    "chrome_url_overrides": {
+        "newtab": "/content/newtab/newtab.html"
+    },
+    "permissions": [
+        "storage",
+        "unlimitedStorage",
+        "contextMenus",
+        "webNavigation",
+        "history",
+        "bookmarks",
+        "tabs",
+        "management",
+        "topSites",
+        "chrome://favicon/",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "optional_permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "icons": {
+        "16": "/skin/icons/16.png",
+        "48": "/skin/icons/48.png",
+        "128": "/skin/icons/128.png"
+    },
+    "web_accessible_resources": [
+        "/skin/icons/16.png"
+    ],
+    "sandbox": {
+        "pages": [
+
+        ]
+    },
+    "minimum_chrome_version": "23",
+    "content_security_policy": "script-src 'self' https://s3.amazonaws.com https://ssl.google-analytics.com; object-src 'self'"
+}

@@ -1,0 +1,21 @@
+[
+	{"name":"Facebook","url":"www.facebook.com","img":"int/www.facebook.com.gif","color":"#3A5896"},
+	{"type":"google","name":"Youtube","url":"www.youtube.com","img":"int/www.youtube.com.png"},
+	{"name":"Twitter","url":"www.twitter.com","img":"int/www.twitter.com.blue.png","color":"#00ACED"},
+
+	{"name":"Wikipedia","url":"https://www.wikipedia.org/","img":"int/wiki.png","color":"#59DC58"},
+	{"name":"Instagram","url":"instagram.com","img":"int/www.instagram.com.gif","color":"#A46FDC"},
+	{"type":"google","name":"Google Maps","url":"maps.google.com","img":"int/maps.google.com.cover.gif","mode":"cover"},
+
+  {"name":"Taobao","url":"www.taobao.com","img":"int/taobao.jpg","color":"#E7AE0E"},
+	{"name":"JD","url":"www.jd.com","img":"int/jd.png","color":"#BCDAEC"},
+	{"name":"Amazon","url":"www.amazon.com","img":"int/www.amazon.com.gif","color":"#DC5869"},
+
+	{"type":"google","name":"Gmail","url":"mail.google.com","img":"int/mail.google.gif","mode":"cover"},
+	{"type":"google","name":"Outlook","url":"www.outlook.com","img":"int/www.outlook.com.blue.png","color":"#0072C6"},
+	{"type":"google","name":"Linkedin","url":"www.linkedin.com","img":"int/www.linkedin.com.gif"},
+
+	{"name":"Tumblr","url":"www.tumblr.com","img":"int/www.tumblr.com.png","color":"#47566D"}
+
+
+]

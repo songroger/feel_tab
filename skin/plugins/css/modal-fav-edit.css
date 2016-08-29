@@ -1,0 +1,12 @@
+/** GENERAL **/
+form{margin:0px;}
+fieldset{border:none;}
+
+#modal-fav-edit {
+	width:410px;
+}
+
+#form-fav-edit{
+	padding: 15px 15px 0px 15px;
+}
+

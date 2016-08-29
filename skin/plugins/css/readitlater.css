@@ -1,0 +1,189 @@
+#readitlater-box {
+	width:800px;
+	background-color: whiteSmoke;
+	overflow-y:scroll;
+	loutline: 1px solid #111;
+	border: 1px solid #555;
+	padding: 10px;
+	position:relative;
+	height:90%;
+	top:20px;
+	-bottom:20px;
+	-webkit-user-select:none;
+	margin:auto;
+}
+	.rit-footer-menu-item{			
+		height: 50px;						
+		position:relative;
+		display: block;
+		width:100%;								
+		-webkit-margin-end: 8px;
+		-webkit-margin-start: 0;
+		-webkit-padding-end: 38px;
+		-webkit-padding-start: 30px;
+		box-sizing: border-box;
+		display: block;
+		font-size: 1.2em;
+		line-height: 35px;
+		max-width: 466px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-decoration: none;
+		color: #063874;	
+	}
+	.rit-title {
+		cursor:pointer;
+	}
+	.rit-item-title {
+		font-size:15px;
+		cursor:pointer;				
+		background: no-repeat 0 50%;
+		background-size: 16px 16px;
+		height:28px;
+		float:left;
+		font-weight:bold;
+		color:black;
+		white-space: nowrap;
+		max-width: 80%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.rit-item-title.read{
+		font-weight: normal;
+		color:black;					
+	}
+
+	.rit-item-url {
+		width: 100%;
+		cursor:pointer;
+		float:left;
+		clear:both;
+		color: #0E774A;
+		height:17px;
+		line-height: 17px;
+		font-size: 12px;
+	}
+	.rit-footer-menu-item:active{
+		color: #063874;
+	}
+	.rit-item-title:hover{
+		text-decoration: underline;
+	}
+	.rit-item-url:hover{
+		text-decoration: underline;
+	}
+	.rit-close-button{
+		background: url("../images/readitlater/ritclose.png") no-repeat  0px 0px ;
+		width: 30px;
+		height: 30px;	
+		cursor: pointer;
+	}
+	.rit-close-button:hover{
+		opacity: 1;
+		background: url("../images/readitlater/ritclose.png") no-repeat 0px -30px !important;
+	}
+	.rit-close-button:active{			
+		background: url("../images/readitlater/ritclose.png") no-repeat 0px -60px !important;
+	}
+	.rit-date {
+		font-size: 15px;
+		font-weight: bold;	
+		height: 16px;
+		position:relative;
+		top:8px;
+	}
+	
+	.rit-site-cont{
+		height: 50px;
+	}
+	
+	.rit-date-cont{
+		cursor:pointer;
+
+	}
+	.rit-date-title {
+		height: 35px;
+		border-bottom: 1px dashed lightgray !important;
+	}
+		.rit-date-title.inactive {
+			color: #c8c8c8;
+			cursor:default;
+		}
+		
+	.rit-title {
+		border: 1px dotted transparent;
+	}
+	
+	.rit-title.selected {
+		background-color: #ececec;
+	}				
+	
+	span#readitlater {
+		margin-top: 10px;
+		display: inline-block;
+		font-weight: bolder;
+		font-size: 0.9em;
+	}
+
+	#readitlater-menu {
+		width: 20%;
+		height: 100%;
+		float: left;
+	}
+
+	#readitlater-content {
+		float: left;
+		width: 80%;
+		height: 100%;
+	}
+		.rit-content-item {
+			border-bottom: 1px dashed rgba(0,0,0,0.2);
+			margin-bottom: 5px;
+		}
+
+		.rit-content-item > div.left {
+			float: left;
+			line-height: 30px;
+		}
+		
+		.rit-content-item > div.right {
+			float: right;
+		}
+
+			.rit-content-icon {
+				margin: 7px 7px 7px 0px;
+			}
+				.rit-content-icon > img {
+					width: 16px;
+					height: 16px;
+				}
+
+			.rit-content-title {
+				font-weight: bolder;
+				width: 80%;
+				cursor: pointer;
+			}
+				.rit-content-title.read {
+					font-weight: normal;
+				}
+
+		.rit-flag-button {
+			background: url("../images/readitlater/flag-empty.png") no-repeat  0px 0px ;
+			background-position:center;
+			width: 30px;
+			height: 30px;	
+			cursor: pointer;
+		}
+		.rit-flag-button.red {
+			background: url("../images/readitlater/flag-marked.png") no-repeat  0px 0px ;
+			background-position:center;
+		}
+		.rit-flag-button:hover {
+			background-color: rgba(255,0,0,0.05);
+		}
+		.rit-text-hide {
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}

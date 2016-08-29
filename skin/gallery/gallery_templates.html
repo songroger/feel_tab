@@ -1,0 +1,44 @@
+<script id="template_site" type="text/template">
+	{{#.}}
+	<div id="{{id}}" 
+		  data-uri="{{uri}}" 
+		  data-name="{{name}}" 
+		  data-color="{{#color}}{{color}}{{/color}}"
+		  data-thumb="{{img}}"
+		 class="gallery site loading {{#selected}}selected{{/selected}}">
+		<div class="overlay"></div>
+		<div class="logo" style="{{#color}}background-color:{{color}};{{/color}}"></div>
+		<div class="placeholder"></div>
+	</div>
+	{{/.}}
+</script>
+<script id="template_shelf" type="text/template">
+	<div 
+		 data-id="{{id}}"
+		 data-uri="{{uri}}" 
+		 data-name="{{name}}" 
+		 data-color="{{#color}}{{color}}{{/color}}"
+		 data-thumb="{{thumb}}"
+		 class="shelf site">
+		<div class="logo" style="
+			background-image:url({{thumb}});
+			{{#color}}background-color:{{color}};{{/color}};
+		"></div>
+		<div class="overlay"></div>
+		<div class="placeholder"></div>
+	</div>
+</script>
+<script id="template_cats" type="text/template">
+	<ol>
+		{{#.}}
+		<li id="{{id}}" data-country="{{groups}}" class="category">{{title}}</li>
+		{{/.}}
+	</ol>
+</script>
+<script id="template_country" type="text/template">
+	<select name="country">
+		{{#.}}
+		<option {{#selected}} selected="selected" {{/selected}} value="{{code}}">{{name}}</option>
+		{{/.}}
+	</select>
+</script>

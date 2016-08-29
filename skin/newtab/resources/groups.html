@@ -1,0 +1,27 @@
+<div>
+	<div class="arrow"></div> 
+	<ul> 
+		<li class="header" style="display:none"><span></span></li>
+		{{#.}}
+		{{#separator}}
+		<li class="separator"></li>
+		{{/separator}}
+		{{#item}}
+		<li class="item">
+			<span data-context={{context}}> 
+				<span>{{title}}</span>
+			</span> 
+		</li>
+		{{/item}}
+		{{#group}}
+		<li class="item {{#selected}}selected{{/selected}}">
+			<span data-context={{context}}> 
+				<span>{{title}}</span>
+				<div data-type="edit" class="btn edit"/>
+				<div data-type="remove" class="btn remove" style="{{^removable}}visibility:hidden;{{/removable}}"/>
+			</span> 
+		</li>
+		{{/group}}
+		{{/.}}
+	</ul> 
+</div>

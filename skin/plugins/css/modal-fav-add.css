@@ -1,0 +1,194 @@
+/** GENERAL **/
+form{margin:0px;}
+fieldset{border:none;}
+dl.sub-nav { display: block; width: auto; overflow: hidden; margin: 0px; padding-top: 4px; }
+dl.sub-nav dd { 
+	min-width:100px;
+	float: left; 
+	display: inline; 
+	margin-left: 9px; 
+	margin-bottom: 10px;
+	color: black;
+	background-color: rgb(252,252,251);
+	text-align: center;
+	vertical-align: text-bottom;
+	border: 1px solid rgba(0,0,0,0.6);
+	outline: 1px solid rgba(0,0,0,0.3);	
+}
+dl.sub-nav dd:hover{
+	box-shadow:0 0 3px black;
+}
+dl.sub-nav dd.active:hover{
+	box-shadow:none;
+}
+dl.sub-nav dd.active { 
+	outline: 1px solid rgba(250,250,250,0.3); 
+	background-image: -webkit-radial-gradient(50% 150%, ellipse cover, rgba(12,19,15,1) 15%,rgba(12,18,23,0.8) 20%);
+	background-image: -moz-radial-gradient(50% 150%, ellipse cover, rgba(12,19,15,1) 15%,rgba(12,18,23,0.8) 20%);
+	color: white !important;
+}
+dl.sub-nav dd a { color:#222 !important;cursor:pointer; padding: 3px 9px; text-decoration: none; }
+dl.sub-nav dd.active a { font-weight: bold; background: transparent; color: white !important; cursor: default; }
+/***/
+
+#add-sources.sub-nav{
+	position: relative;
+	float: right;
+	display: inline-block;
+	margin-right: 88px;
+	padding-top: 15;
+}
+
+#modal-fav-add.a-multiforming {
+	-webkit-transition-property:width,height;
+	-webkit-transition-duration:200ms,400ms;
+	-webkit-transition-timing-function:linear,linear;
+	
+}
+
+#modal-fav-add form{
+	display:none;
+}
+#modal-fav-add #fav-loader {
+	display:none;
+	position: absolute;
+	left: 130;
+	width: 100%;
+	height: 36px;
+	top: -2px;
+	background-image: url(../../newtab/images/ajax-loader-bar.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:220px 30px;
+	background-color: transparent;
+}
+#modal-fav-add [class|="nav-button"]{
+	font-size:13px;
+	margin-left:10px;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	cursor: pointer;
+	color :#999;
+	display:none;
+}
+#modal-fav-add [class|="nav-button"].selected{
+	font-size:13px;
+	margin-left:10px;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	cursor: default;
+	color :red !important;
+}
+#modal-fav-add [class|="nav-button"].visible{display:inline;}
+#modal-fav-add [class|="nav-button"]:hover{ color:#888;}
+
+#fav-url-form {
+	padding: 15px 15px 0px 15px;
+}
+	#fav-url-form #submit.button{
+		width: 100%;
+		height: 32px;
+	}
+
+#fav-tabs-form{
+	width:550px;
+	height:230px;
+}
+
+#fav-screenshot-form{
+	width:676px;
+	height:450px;
+}
+
+#fav-gallery-form{
+
+}
+
+	
+	#fav-url-form #submit[data-state="disabled"] {
+	}
+	#fav-url-form label[for=site-url]{
+		float: left;
+		height: 33px;
+		margin-right: 20px;
+		margin-top: 5px;
+		margin-left:5px;
+		font-family: 'Segoe UI', Tahoma, sans-serif;
+		font-size:16px;
+	}
+
+	/*** //fav-url-form ***/
+	#fav-tabs-form {
+		overflow: auto;
+	}
+
+	#fav-tabs-form #tabs-list{
+		position: absolute;
+		width: 100%;
+		bottom: 12px;
+		top: 0px;
+		overflow: overlay;
+	}
+	#fav-tabs-form ul {
+		font-size: 12px;
+		font-family: 'Segoe UI', Tahoma, sans-serif;
+		list-style: none outside none;
+		padding: 0;
+		border-color: rgba(0, 0, 0, 0.4);
+		border-style: dotted;
+		border-width: 1px 1px 0;
+		list-style: none outside none;
+		margin: 10px;
+	}
+	
+	#fav-tabs-form  ul > li:hover {
+		border: 1px solid #7ca3ce!important;
+		background-color: #ddeafc;
+		border-radius: 2px;
+	}
+
+	#fav-image {
+		border:1px solid rgba(0,0,0,0.26);
+	}
+	#fav-image * {
+		box-shadow:0;
+	}
+	#fav-tabs-form  ul > li {
+		border-bottom: 1px dashed lightgray !important;
+		cursor: pointer;
+		height: 26px;
+		margin: 0 0 0px;
+		padding-left: 26px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		background-color: #FAFAFA;
+		background-position: 5px 5px;
+		background-repeat: no-repeat;
+		background-size: 16px;
+		border: 1px solid transparent;
+		padding-top:5px;
+		-moz-box-sizing: border-box;
+	}
+	/** //#fav-tabs-form **/
+	#fav-gallery-form iframe {
+		width: 100%;
+		height: 400px;
+		overflow: hidden;
+	}
+	/** //#fav-gallery-form **/
+	#fav-screenshot-form image#screenshot{
+		/**position:absolute;**/
+	}
+	#fav-screenshot-form #sc-image-area {
+		position:relative;
+		top:10px;left:10px;
+		width: 640px;
+		height: 457px;
+		border: 1px solid black;
+	}
+	#fav-screenshot-form #sc-submit {
+		float: right;
+		height: 35px;
+		line-height: 0px;
+		margin-right: 10px;
+		margin-top: 7px;
+	}

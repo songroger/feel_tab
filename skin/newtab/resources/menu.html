@@ -1,0 +1,20 @@
+<div>
+	<div class="arrow"></div> 
+	<ul> 
+		{{#.}}
+		{{#separator}}
+		<li class="separator"></li>
+		{{/separator}}
+		{{^separator}}
+		<li class="item">
+			<span data-id={{id}}> 
+				<img class="icon" 
+					{{#favIconUrl}}src="{{favIconUrl}}" style="visibility:visible"{{/favIconUrl}}
+				>
+				<span>{{title}}</span>
+			</span> 
+		</li>
+		{{/separator}}
+		{{/.}}
+	</ul> 
+</div>

@@ -1,0 +1,192 @@
+#layout-box {
+	position: fixed;
+	box-shadow: 0px 0px 12px black;
+	z-index: 1000;
+	width: 320px;
+	background-color: rgba(210,210, 210, 0.72);
+	border: 1px solid rgba(250,250,250,0.68);
+	-outline: 1px solid rgba(0,0,0,0.64);
+}
+#layout-box *{
+	-webkit-user-select : none;
+}
+#layout-box table tr {
+	background:transparent !important;
+}
+	#layout-box .settings-header{
+		border-bottom: 1px solid rgba(0,0,0,0.15);
+		width: 100%;
+		height: 30px;
+		margin-bottom: 5px;
+	}
+	#layout-box .settings-title{
+		line-height:30px;
+		padding:10px;
+		font-size: 14px;
+		font-family: Arial;
+		-webkit-font-smoothing: antialiased;
+		text-shadow: 0px 1px black;
+	}
+	
+	#layout-box .settings-table{
+		margin:0px;
+		background:transparent;
+		color: whiteSmoke;
+		width: 100%;
+		padding: 0px 2px;
+	}
+	#layout-box .close-button{
+		position: absolute;
+		right: 10px;
+		top: 5px;
+		background: url("../../newtab/images/close.png") no-repeat 0px 0px;
+		background-position: center;
+		width:20px;
+		height:20px;
+		background-color: rgba(255, 255, 255, 0.6);
+		border-radius: 10px;
+		cursor:pointer;
+	}
+
+	#layout-box .close-button:hover{
+		background-image: url("../../newtab/images/close.png") no-repeat 0px -16px !important;
+		background-color: rgba(255, 255, 255, 0.9);
+		background-position: center;
+	}
+		td.title{
+			color:white;
+			height:34px;
+			font-size: 13px;
+			text-shadow: 3px 3px 2px #000;
+			font-family: Arial;
+			border: 1px solid rgba(250,250,250,0.23);
+			background: -webkit-linear-gradient(left, rgba(19,19,19,0.88) 0%,rgba(56,56,56,0.86));
+			background: -moz-linear-gradient(left, rgba(19,19,19,0.88) 0%,rgba(56,56,56,0.86) 100%);
+			padding: 0px 10px;
+		}	
+		td.values{
+			width:190px;
+		}
+			.layout-setting {
+				display: inline-block;
+				cursor: pointer;
+				height: 32px;
+				margin: 2px;
+				line-height: 32px;
+				color: black;
+				background-color: rgb(252,252,251);
+				text-align: center;
+				vertical-align: text-bottom;
+				border: 1px solid rgba(0,0,0,0.6);
+				-outline: 1px solid rgba(0,0,0,0.3);
+				font-size: 14px;
+				font-family: Arial;
+			}
+			.layout-setting.selected {
+				cursor: default;
+				background-image: -webkit-radial-gradient(50% 150%, ellipse cover, rgba(12,39,65,1) 15%,rgba(125,185,232,0.8) 20%);
+				background-image: -moz-radial-gradient(50% 150%, ellipse cover, rgba(12,39,65,1) 15%,rgba(125,185,232,0.8) 20%);
+				box-shadow: none !important;
+				outline: 1px solid rgba(250,250,250,0.3);
+			}
+			.layout-setting:hover{
+				box-shadow: 0px 0px 4px black;
+			}
+			.layout-setting.num_of_cols{
+				width: 31px;
+				margin: 0px;
+				padding: 0px;
+			}
+			.layout-setting.size {
+				width: 166px;
+			}
+			.layout-setting.prop {
+				width: 82px;
+				margin : 0px;
+			}
+			.layout-setting.spacing {
+				width: 80px;
+			}
+
+input[type=checkbox]#layout-3D,
+input[type=checkbox]#show-titles
+{
+	visibility: hidden;
+}
+
+/* SQUARED ONE */
+.checkbox > div{
+	width: 21px;
+	height: 21px;
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+	margin: 5px auto;
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	position: relative;
+}
+
+.checkbox > span {
+	line-height:32px;
+	margin-left:20px;
+}
+.checkbox label {
+	cursor: pointer;
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	left: 1px;
+	top: 1px;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+
+	background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+	background: linear-gradient(top, #222 0%, #45484d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+
+.checkbox label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	background-image: -webkit-radial-gradient(50% 150%, ellipse cover, rgba(12,39,65,1) 15%,rgba(125,185,232,0.8) 20%);
+	background-image: -moz-radial-gradient(50% 150%, ellipse cover, rgba(12,39,65,1) 15%,rgba(125,185,232,0.8) 20%);
+
+	top: 1px;
+	left: 1px;
+
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+.checkbox > div, .checkbox > span {
+	float : left;
+}
+.checkbox label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.checkbox input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}

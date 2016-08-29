@@ -1,0 +1,86 @@
+<div id="layout-box">
+	<div class="settings-header">
+		<span
+			data-labels="innerText#layout_title"
+			class="i18n settings-title">Layout</span>
+		<div class="close-button"></div>
+	</div>
+	<table class="settings-table">
+		<tr id="layout-3D-settting"><td class="title">
+			<div class="checkbox">
+				<div>
+					<input type="checkbox" value="None" id="layout-3D" name="check" />
+					<label for="layout-3D"></label>
+				</div>
+				<span>3D</span>
+			</div>	
+		</td></tr>
+		<tr><td class="title">
+			<div class="checkbox">
+				<div>
+					<input type="checkbox" value="None" id="show-titles" name="check" />
+					<label for="show-titles"></label>
+				</div>
+				<span 
+					data-labels="innerText#layout_showtitles"
+					class="i18n">Titles</span>
+			</div>	
+		</td></tr>
+		<tr><td 
+			data-labels="innerText#layout_maxcolumns"
+			class="i18n title">Max Number of Columns</td>
+			<td class="values">
+					<div>
+						<div data-type="int" data-num_of_cols="3" class="layout-setting num_of_cols">3</div>
+						<div data-type="int" data-num_of_cols="4" class="layout-setting num_of_cols">4</div>
+						<div data-type="int" data-num_of_cols="5" class="layout-setting num_of_cols">5</div>
+						<div data-type="int" data-num_of_cols="6" class="layout-setting num_of_cols">6</div>
+						<div data-type="int" data-num_of_cols="7" class="layout-setting num_of_cols">7</div>
+					</div>
+			</td>
+		</tr>
+		<tr><td 
+			data-labels="innerText#layout_dialsshape"
+			class="i18n title">Dials Shape</td>
+			<td class="values">
+				<div>
+					<div data-type="float" data-prop="1.9" class="i18n layout-setting prop"
+					     data-labels="innerText#layout_dialsshape_flat">Flat</div>
+					<div data-type="float" data-prop="1.4" class="i18n layout-setting prop"
+					     data-labels="innerText#layout_dialsshape_box">Box</div>
+				</div>
+			</td>
+		</tr>
+		<tr><td 
+			data-labels="innerText#layout_dialsmaxsize"
+			class="i18n title">Dials Max Size</td>
+			<td class="values">
+				<div>
+					<div data-type="int" data-size="175" class="i18n layout-setting size"
+						 data-labels="innerText#layout_dialsmaxsize_small">Small</div>
+					<div data-type="int" data-size="235" class="i18n layout-setting size"
+						 data-labels="innerText#layout_dialsmaxsize_medium">Medium</div>
+					<div data-type="int" data-size="300" class="i18n layout-setting size"
+						 data-labels="innerText#layout_dialsmaxsize_large">Large</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="layout-spacing-settting">
+			<td 
+				data-labels="innerText#layout_spacing"
+				class="i18n title">Spacing</td>
+			<td class="values">
+				<div>
+					<div data-type="int" data-spacing="0" class="i18n layout-setting spacing"
+						 data-labels="innerText#layout_spacing_none">None</div>
+					<div data-type="int" data-spacing="4" class="i18n layout-setting spacing"
+					     data-labels="innerText#layout_spacing_small">Small</div>
+					<div data-type="int" data-spacing="14" class="i18n layout-setting spacing"
+					     data-labels="innerText#layout_spacing_medium">Medium</div>
+					<div data-type="int" data-spacing="24" class="i18n layout-setting spacing"
+						 data-labels="innerText#layout_spacing_big">Big</div>
+				</div>
+			</td>
+		</tr>			
+	</table>
+</div>

@@ -1,0 +1,39 @@
+fieldset{border:none;}
+
+#fav-group-dialog {
+	height:194px;
+	width:242px;
+}
+#dialog-close{
+	margin-top:16px;
+	margin-right:10px;
+	padding:7px;
+	float:right;
+	cursor:pointer;
+	width:20px;
+	height:20px;
+	background-image:url('../../newtab/images/x-button.png');
+}
+#fav-group-dialog form#fav-group-form{
+	width:210px;
+	height:68px;
+	margin:0px;
+}
+		
+	#fav-group-form #group-name {
+		width: 200px;
+		height: 33px;
+	}
+
+	#fav-group-form #submit {
+		height: 33px;
+		line-height: 0px;
+		margin-top: 25;
+		width: 200px;
+	}
+	
+	#fav-group-form .simplecolorpicker.icon {
+		width: 200px;
+		height: 30;
+		border:1px solid rgba(0,0,0,0.25);
+	}

@@ -1,0 +1,65 @@
+<div id="modal-fav-add" class="modal dialog">
+	 <div class="modal-header">
+		<h5 data-labels="innerText#favadd_title" 
+			class="modal-header-title i18n">Add a Speed Dial</h5>
+		<div class="x-button"></div>
+		<dl id="add-sources" class="sub-nav">
+		  <dd class="nav-form active" data-form="url"><a>URL</a></dd>
+		  <!--dd class="nav-form" data-form="tabs"><a>Active Tab</a></dd-->
+		 <!--  <dd class="i18n nav-form" 
+			  data-labels="innerText#favadd_gallery" 
+			  data-form="gallery"><a>Gallery</a></dd> -->
+		</dl>
+	</div>
+	<div class="modal-content">
+		<form id="fav-url-form" data-width="610" data-height="93">
+		  <div class="row">
+			<div class="small-12">
+			  <div class="row">
+				<div class="small-10 columns">
+					<input 
+						class="i18n text-field"
+						data-labels="placeholder#favadd_customurl" 
+						placeholder="Enter Site name or URL" autocomplete="off" id="site-url" type="text"/>
+					<div id="fav-loader"></div>
+				</div>
+				<div class="small-2 columns">
+					<button 
+						class="i18n small right button disabled"
+						data-labels="innerText#favadd_go" 
+						id="submit" type="submit">Go</button>
+					</div>
+			  </div>
+			  <div class="row advance">
+				<div class="small-9 columns">
+					<div style="float:right;position:relative;left: -10px;">
+					    <label style="padding-right:4px;padding-left: 10px;margin-top:1px;font-size:11px;float:right" for="make_screenshot">Take Screenshot</label>
+						<input type="checkbox" id="make_screenshot" value="None" name="check" class="right">
+					</div>
+				</div>
+				<div id="make_crop_box" class="small-2 columns" style="float:left">
+					<div style="float:left;position:relative;left: -10px;">
+					    <label id="make_crop_label" style="padding-right:4px;padding-left: 10px;margin-top:1px;font-size:11px;float:right" for="make_crop">Crop</label>
+						<input type="checkbox" id="make_crop" value="None" name="check" class="right">
+					</div>
+				</div>
+			  </div>
+		    </div>
+		</div>
+			
+		</form>
+		<form id="fav-tabs-form">
+			<div id="tabs-list">
+				<ul class="xxx4"></ul>
+			</div>
+		</form>
+		<form id="fav-screenshot-form" data-width="676" data-height="545">
+			<div id="sc-image-area"></div>
+			<div id="sc-control-area" style="height:40px;width:100%;position:absolute;bottom:15px;">
+				<input id="sc-submit" type="submit"  value="Continue" class="i18n button"
+					data-labels="value#favadd_continue"/>
+			</div>
+		</form>
+		<form id="fav-gallery-form" data-width="1070" data-height="400"></form>
+	</div>
+</div>
