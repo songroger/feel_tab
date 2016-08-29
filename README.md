@@ -1,3 +1,3 @@
 ###A tab extention for chrome
 
-![PREVIEW](https://www.zybuluo.com/static/img/my_head.jpg)
+![PREVIEW](http://7xof48.com1.z0.glb.clouddn.com/preview.png)
