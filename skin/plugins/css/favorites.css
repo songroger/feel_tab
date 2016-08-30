@@ -213,6 +213,9 @@
 		 rgba(115,115,115,0.15) 100%
 		);
 	}
+	.fav-overlay:hover {
+			background-color: #000;
+	}
 	.fav-overlay.hasColor{
 		background-image: -moz-linear-gradient( top, rgba(220,227,225,0.1), rgba(35,35,35,0.1) );
 		background-image: -webkit-linear-gradient( top, rgba(204,218,214,0.71), rgba(35,35,35,0.1) );
