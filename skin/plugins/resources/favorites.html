@@ -1,14 +1,14 @@
 {{#state-ready}}
 <div class="fav-link"
 	data-id="{{id}}" data-state="{{state}}" data-mode="{{mode}}" data-origin="{{origin}}"
-	data-url="{{url}}" data-name="{{name}}" 
+	data-url="{{url}}" data-name="{{name}}"
 	data-thumb="{{thumb}}" data-color="{{color}}"
-	data-hostname="{{hostname}}"
+	data-hostname="{{hostname}}" title="{{name}}"
 	>
 	<div class="fav-tile {{mode}} {{#color}}hasColor{{/color}}" >
 		<div class="fav-paint" {{#color}}style="background-color:{{color}};"{{/color}}>
 			{{#mode-icon}}
-				
+
 				<div class="fav-icon fav-icon-img"/>
 
 				<div class="fav-icon fav-psuedo"/>
@@ -33,10 +33,10 @@
 	</div>
 	<div class="fav-overlay {{#color}}hasColor{{/color}} "/>
 	<div class="fav-shadow"/>
-	
+
 	<div class="fav-functions">
 		<div class="fav-remove"/>
-		<div class="fav-edit"/>			
+		<div class="fav-edit"/>
 	</div>
 </div>
 {{/state-ready}}
@@ -50,7 +50,7 @@
 			<div class="fav-loader"/>
 			<div class="fav-functions">
 				<div class="fav-remove"/>
-				<div class="fav-edit"/>			
+				<div class="fav-edit"/>
 			</div>
 		</div>
 		<div class="fav-name">
@@ -84,4 +84,3 @@
 {{/state-plus}}
 {{/state-create}}
 {{/state-ready}}
-
