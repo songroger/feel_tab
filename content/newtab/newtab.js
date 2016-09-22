@@ -101,11 +101,12 @@ conf("feed", "limited");
 conf("sfontsize", 18);
 conf("uref", "g4");
 conf("smethod", 0);
-conf("info.links-0", ["About", "Uninstall"]);
-conf("info.links-1", ["About", "Uninstall"]);
+conf("info.links-0", ["Appstore", "About", "Uninstall"]);
+conf("info.links-1", ["Appstore", "About", "Uninstall"]);
 conf("link.eula", "");
 conf("link.privacy", "");
 conf("link.about", "https://github.com/songroger");
+conf("link.appstore", "https://chrome.google.com/webstore/category/apps");
 conf("link.uninstall", "newtab://uninstall");
 conf("theme.luminance", "light");
 conf("theme.background", "white");
@@ -2858,18 +2859,6 @@ window.newtab = window.newtab || {};
         onClick: function(a) {
             chrome.tabs.update(null, {
                 url: "chrome://apps"
-            })
-        }
-    })
-})(jQuery);
-(function(a) {
-    newtab.registerPlugin({
-        type: "footer.left.action",
-        id: "apps",
-        title: "AppStore",
-        onClick: function(a) {
-            chrome.tabs.update(null, {
-                url: "https://chrome.google.com/webstore/category/apps"
             })
         }
     })
