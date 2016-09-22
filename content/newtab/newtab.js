@@ -2863,6 +2863,18 @@ window.newtab = window.newtab || {};
     })
 })(jQuery);
 (function(a) {
+    newtab.registerPlugin({
+        type: "footer.left.action",
+        id: "apps",
+        title: "AppStore",
+        onClick: function(a) {
+            chrome.tabs.update(null, {
+                url: "https://chrome.google.com/webstore/category/apps"
+            })
+        }
+    })
+})(jQuery);
+(function(a) {
     function f(b, c) {
         c = "undefined" !== typeof c ? c : !1;
         var d = a(".fav-link", b);
